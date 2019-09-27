@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <link rel="stylesheet" href="horiscopeStyles.css">
+  <script type="text/javascript">
+
+    function horiscope()
+    {
+      //var dt = new Date();
+      //var manth = dt.getMonth();
+      //var pic = "<img src = 'horse.png' width = '100px' height = '100px'/>";
+      //var msg = "Beware of your fears!"
+      //document.getElementById('astroSign').innerHTML=pic;
+      //document.getElementById('fortune').innerHTML=msg;
+
+      var month = parseInt(document.getElementById("month").value);
+      var day = parseInt(document.getElementById("day").value);
+
+      if(month ==1)
+      {
+        if(day>=20&& day<32) //aquarius
+        {
+          aquarius();
+        } else if(day > 0) //capricorn
+        {
+          capricorn();
+        } else {
+          alert("invalid date value")
+        }
+      } else if (month ==2)
+      {
+        if(day>=19&& day<32) //pices
+        {
+            pices();
+        } else if(day > 0) //Aquarius
+        {
+            aquarius();
+        } else {
+          alert("invalid date value")
+        }
+
+      } else if (month ==3)
+      {
+        if(day>=21&& day<32) //Aries
+        {
+            aries();
+        } else if(day > 0) //pices
+        {
+            pices();
+        } else {
+          alert("invalid date value")
+        }
+
+      } else if (month ==4)
+      {
+        if(day>=20&& day<32) //Taurus
+        {
+          taurus();
+        } else if(day > 0) //Aries
+        {
+          aries();
+        } else {
+          alert("invalid date value")
+        }
+      } else if (month ==5)
+      {
+        if(day>=21&& day<32) //Gemini
+        {
+          gemini();
+        } else if(day > 0) //Taurus
+        {
+          taurus();
+        } else {
+          alert("invalid date value")
+        }
+
+      } else if (month ==6)
+      {
+        if(day>=21&& day<32) //Cancer
+        {
+          cancer();
+        } else if(day > 0) //Gemini
+        {
+          gemini();
+        } else {
+          alert("invalid date value")
+        }
+
+      } else if (month ==7)
+      {
+        if(day>=23&& day<32) //Leo
+        {
+          leo();
+        } else if(day > 0) //Cancer
+        {
+          cancer();
+        } else {
+          alert("invalid date value")
+        }
+      } else if (month ==8)
+      {
+        if(day>=23&& day<32) //Virgo
+        {
+          virgo();
+        } else if(day > 0) //Leo
+        {
+          leo();
+        } else {
+          alert("invalid date value")
+        }
+      } else if (month ==9)
+      {
+        if(day>=23&& day<32) //Libra
+        {
+          libra();
+        } else if(day > 0) //Virgo
+        {
+          virgo();
+        } else {
+          alert("invalid date value")
+        }
+
+      } else if (month ==10)
+      {
+        if(day>=23&& day<32) //Scorpio
+        {
+          scorpio();
+        } else if(day > 0) //Libra
+        {
+          libra();
+        } else {
+          alert("invalid date value")
+        }
+
+      } else if(month ==11)
+      {
+        if(day>=22&& day<32) //Sagittarius
+        {
+          sagittarius();
+        } else if(day > 0) //Scorpio
+        {
+          scorpio();
+        } else {
+          alert("invalid date value")
+        }
+      } else if (month==12)
+      {
+        if(day>=22&& day<32) //Capricorn
+        {
+          capricorn();
+        } else if(day > 0) //Sagittarius
+        {
+          sagittarius();
+        } else {
+          alert("invalid date value")
+        }
+
+      }else {
+
+          alert("invalid Month Value");
+
+      }
+    }
+
+
+    function aquarius()
+    {
+      var pic = "<img src = 'aquarius.png' width = '200px' height = '200px'/>";
+      document.getElementById('astroSign').innerHTML=pic;
+      document.getElementById('fortune').innerHTML="You feel as though you've turned a financial and professional corner, Aquarius. Recent accomplishments have you feeling energized and on top of the world! You exude confidence. It's a good feeling, isn't it? Members of the opposite sex are especially attracted to you right now. And who could blame them? You're looking great!";
+    }
+
+    function capricorn()
+    {
+
+      var pic = "<img src = 'capricorn.png' width = '200px' height = '200px'/>";
+      document.getElementById('astroSign').innerHTML=pic;
+      document.getElementById('fortune').innerHTML="Sometimes a little indulgence has value far beyond its price, Capricorn. A bubble bath in the middle of the day, a luxurious hour spent browsing in a bookstore, a special outfit you've wanted for a long time - these are a few of the ways you could perk up your spirits. Why not? You could use a boost.";
+    }
+
+    function aries()
+    {
+      var pic = "<img src = 'aries.png' width = '200px' height = '200px'/>";
+      document.getElementById('astroSign').innerHTML=pic;
+      document.getElementById('fortune').innerHTML="Loving care is prescribed for someone in your family, Aries. Offer a bowl of soup and some tea, but beyond that try and stay out of the way. Sometimes uninterrupted quiet is the best cure of all. You could use a bit of this yourself. Why not curl up with a good book? Even if it's the middle of the day, draw the shades and pretend it's night.";
+    }
+
+    function taurus()
+    {
+      var pic = "<img src = 'taurus.png' width = '200px' height = '200px'/>";
+      document.getElementById('astroSign').innerHTML=pic;
+      document.getElementById('fortune').innerHTML="There's tension in the air, Taurus, but there's little you can do about it. The harsh atmosphere is in stark contrast to the frivolity you felt over the last several days. It seems you received some good news. Perhaps you were finally recognized for your hard work? Don't brag about your accomplishments. It would only exacerbate the situation. Be patient. Avoid confrontation.";
+    }
+
+    function gemini()
+    {
+      var pic = "<img src = 'gemini.png' width = '200px' height = '200px'/>";
+      document.getElementById('astroSign').innerHTML=pic;
+      document.getElementById('fortune').innerHTML="You might be in a financial jam right now, Gemini. The stress of the situation has you considering some radical solutions. Would it really benefit your family if you took a second job? Confide in a friend and see if he or she can help you find a more agreeable solution. Perhaps a relative could give you a low-interest loan";
+    }
+
+    function cancer()
+    {
+      var pic = "<img src = 'cancer.jpg' width = '200px' height = '200px'/>";
+      document.getElementById('astroSign').innerHTML=pic;
+      document.getElementById('fortune').innerHTML="Don't spread the good news too quickly, Cancer. As exciting as it is, nothing is confirmed yet. Keep the information under your hat until plane reservations have been made or you have the job offer in writing. Whatever the good news is, it's exactly what the doctor prescribed to give your self-confidence a boost.";
+    }
+
+    function leo()
+    {
+      var pic = "<img src = 'leo.png' width = '200px' height = '200px'/>";
+      document.getElementById('astroSign').innerHTML=pic;
+      document.getElementById('fortune').innerHTML="If you receive a financial windfall, spend it wisely, Leo. Your tendency might be to buy gifts or treat a crowd to a lavish night on the town. But where is the enduring value? Invested carefully, a small chunk of money can grow into a much larger one, which will give you many more options. Be prudent.";
+    }
+
+    function virgo()
+    {
+      var pic = "<img src = 'virgo.png' width = '200px' height = '200px'/>";
+      document.getElementById('astroSign').innerHTML=pic;
+      document.getElementById('fortune').innerHTML="You're energetic and enthusiastic today, Virgo, and those around you respond favorably. It seems everyone wants to be in your orbit. Work at home and the office goes quickly and smoothly. Because you have so much energy, why not take on a new project? Normally this would send you over the edge, but today you feel you could take on anything. Go for it.";
+    }
+
+    function libra()
+    {
+      var pic = "<img src = 'libra.png' width = '200px' height = '200px'/>";
+      document.getElementById('astroSign').innerHTML=pic;
+      document.getElementById('fortune').innerHTML="There's tension all around you, so you'll be happiest spending as much time by yourself as possible, Libra. If you must interact with people, keep your communication clear and concise. There's room for misunderstanding, which could result in a major blowup over a minor event. It simply isn't worth the trouble being with people today. Seclusion is the only place where you'll find peace";
+    }
+
+    function scorpio()
+    {
+      var pic = "<img src = 'scorpio.png' width = '200px' height = '200px'/>";
+      document.getElementById('astroSign').innerHTML=pic;
+      document.getElementById('fortune').innerHTML="You're ready for a change, Scorpio, there's no doubt about it. As you grow older your interests broaden, and you're considering pursuing some of these new interests in earnest. Perhaps school beckons, or some adult education courses. You're ready to make a new place for yourself in the world. Go ahead and get started!";
+    }
+
+    function sagittarius()
+    {
+      var pic = "<img src = 'sag.png' width = '200px' height = '200px'/>";
+      document.getElementById('astroSign').innerHTML=pic;
+      document.getElementById('fortune').innerHTML="You've never looked better, Sagittarius. Your partner notices, too, and showers you with extra affection and perhaps even an unexpected gift. This should put a smile on your face! At work, you may be given responsibilities beyond your usual job. Take care to do this special assignment well. If you do, other advancements are likely to follow.";
+    }
+
+    function pices()
+    {
+      var pic = "<img src = 'pices.png' width = '200px' height = '200px'/>";
+      document.getElementById('astroSign').innerHTML=pic;
+      document.getElementById('fortune').innerHTML="Who knew you were so talented, Pisces? A creation done long ago suddenly takes on a life of its own. A short story written and submitted long ago is pulled from the bottom of the slush pile. Or a portrait you painted gets a second admiring look. Whatever the circumstances, you enjoy the recognition. Your work isn't the only thing receiving admiring glances. Your partner appreciates you, too!";
+    }
+
+  </script>
+<h>Horiscope</h>
+  <body>
+
+    <br>
+    <br>
+      <input id="month"type="boxStyle">
+        <input id="day"type="boxStyle">
+        <input type="button" value="enter" onclick="horiscope()">
+        <br>
+      <span class="span" id="astroSign"></span>
+      <br>
+      <span class="span" id = "fortune"></span>
+  </body>
+</html>
